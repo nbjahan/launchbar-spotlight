@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>Spotlight.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>nbjahan.launchbar.spotlight</string>
+	<key>CFBundleName</key>
+	<string>Spotlight Search</string>
+	<key>CFBundleVersion</key>
+	<string>2.1.2</string>
+	<key>LBDebugLogEnabled</key>
+	<false/>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBAuthor</key>
+		<string>nbjahan</string>
+		<key>LBChangelog</key>
+		<string>
+			Fixed a bug where send a folder to action was not working anymore
+			Support for typing search path as live feedback
+		</string>
+		<key>LBDownload</key>
+		<string>https://github.com/nbjahan/launchbar-spotlight/releases/download/v2.1.2/Spotlight.Search-2.1.2.lbaction</string>
+		<key>LBRequirements</key>
+		<string>Spotlight indexing should be enabled. To check run this in terminal: sudo mdutil -a -s</string>
+		<key>LBSummary</key>
+		<string>Searches Spotlight and displays the results. You can enter advanced queries:
+-onlyin ~ "kMDItemUserTags=='*' &amp;&amp; kMDItemContentType=='*app*"
+If you know the type of item you’re looking for, you can specify it when performing a search. To specify the type, add the text “kind:&lt;type of item&gt;” at the end of your search. For example, if you want to search for images of New York City, enter “New York City kind:images.” If you want to search for email messages that mention Anne Johnson, enter “Anne Johnson kind:email.”
+You can use these keywords: application,applications,app,contact,contacts,folder,folders,email,emails,mail message,mail messages,event,events,reminder,reminders,image,images,movie,movies,music,audio,pdf,pdfs,system preferences,preferences,bookmark,bookmarks,font,fonts,presentation,presentations
+Moreinfo:
+http://support.apple.com/kb/PH14172
+http://support.apple.com/kb/PH14214
+http://bit.ly/spotlightqueries
+		</string>
+		<key>LBTwitter</key>
+		<string>@nbjahan</string>
+		<key>LBUpdate</key>
+		<string>https://raw.githubusercontent.com/nbjahan/launchbar-spotlight/master/src/Info.plist</string>
+		<key>LBWebsite</key>
+		<string>http://github.com/nbjahan/launchbar-spotlight</string>
+	</dict>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBKeepWindowActive</key>
+			<true/>
+			<key>LBLiveFeedbackEnabled</key>
+			<true/>
+			<key>LBRequiresArgument</key>
+			<true/>
+			<key>LBScriptName</key>
+			<string>spotlight</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
